@@ -74,7 +74,7 @@ footer {
     right: 5%;
     top: 70px;
     background-color: var(--card-bg);
-    border: 1px(--border-color);
+    border: 1px solid var(--border-color); /* Corrected: Missing 'solid' and 'var(--border-color)' */
     border-radius: 6px;
     padding: 10px;
     display: none;
@@ -124,8 +124,8 @@ h1 {
 }
 
 .malware-card {
-   : var(--card-bg);
-    border: 1px solidborder-color);
+    background-color: var(--card-bg); /* Corrected: Missing 'background-color' */
+    border: 1px solid var(--border-color); /* Corrected: Missing 'solid' */
     border-radius: 6px;
     padding: 20px;
     transition: transform 0.2s;
@@ -159,35 +159,41 @@ h1 {
     cursor: pointer;
 }
 
-option.selected background-color: var(--accent-color);
+.price-option.selected { /* Corrected: Missing a space and a period */
+    background-color: var(--accent-color);
 }
 
 .buy-btn {
--color: var(---color);
+    background-color: var(--accent-color); /* Corrected: Missing 'background-color' */
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
-    cursor:    width: 100%;
+    cursor: pointer;
+    width: 100%;
     font-weight: bold;
-    transition: background-color 2s;
+    transition: background-color 0.2s;
 }
 
 .buy-btn:hover {
     background-color: #2ea043;
- Modal Styles */
+}
+
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
-    top0;
+    top: 0; /* Corrected: Missing a semicolon */
     left: 0;
     width: 100%;
     height: 100%;
-   : rgba(0, 0, 0, 0.7);
--index: 1000;
+    background-color: rgba(0, 0, 0, 0.7); /* Corrected: Missing 'background-color' */
+    z-index: 1000;
     justify-content: center;
     align-items: center;
-al-content {
+}
+
+.modal-content { /* Corrected: Missing a period */
     background-color: var(--card-bg);
     padding: 20px;
     border-radius: 6px;
@@ -302,4 +308,4 @@ al-content {
     .modal-content {
         width: 95%;
     }
-}
+        }
