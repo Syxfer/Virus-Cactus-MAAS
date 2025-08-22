@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Cactus - MaaS (Malware as a Service)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">Virus Cactus MaaS</        <button class="settings-btn" id="settingsBtn">⚙️ Settings</button>
+        
+        <div class="settings-menu" id="settingsMenu">
+            <div class="theme-switcher">
+                <span>Theme:</span>
+                <button="lightThemeBtn">Light</button>
+                <button id="darkThemeBtn">Dark</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Premium Malware Solutions</h1>
+            <p class="description">
+                Advanced malware tools for authorized security testing only. All usage must comply with applicable laws.
+            </p>
+        </sectionsection class="malware-grid">
+            <article class="malware-card">
+                <h3>Discord Token &aler</h3>
+                <div class="malware-desc">
+                    <p>Stealthy token/cookie harvesting solution with automated ex.</p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-option" data-plan="week">
+                        <span>1 Week</span>
+                        <span>$20</span>
+                    </div>
+                    <div class="price-option" data-plan="month">
+                        <span>1span>
+                        <span>$110</span>
+                    </div>
+                    <div class-option" data-plan="lifetime">
+                        <span>Lifetime</span>
+                        <span>$250</span>
+                    </div>
+                </div>
+                
+                <button class="buy-btn">Purchase</button>
+            </article>
+        </section>
+    </main>
+    
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchaseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Purchase</h2>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <form id="purchaseForm">
+                <="hidden" id="selectedProduct" value="">
+                <input type="hidden" idPlan" value="">
+                
+                <div class="plan-select                    <!-- Dynamically populated by JavaScript -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="4111 1111 1111 1111" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nameOnCard">Name on Card</label>
+                    <input type="text" id="nameOnCard" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="webhook">Discord Webhook URL</label>
+                    <input type="url" id="webhook" placeholder="https://discord.com/api/webhooks/..." required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Complete Purchase</button>
+                
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <p>Processing your purchase...</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Virus Cactus MaaS. All tools are for authorized security research only.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
