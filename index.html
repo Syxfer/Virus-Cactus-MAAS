@@ -8,12 +8,13 @@
 </head>
 <body class="dark-mode">
     <header>
-        <div class="logo">Virus Cactus MaaS</        <button class="settings-btn" id="settingsBtn">⚙️ Settings</button>
+        <div class="logo">Virus Cactus MaaS</div>
+        <button class="settings-btn" id="settingsBtn">⚙️ Settings</button>
         
         <div class="settings-menu" id="settingsMenu">
             <div class="theme-switcher">
                 <span>Theme:</span>
-                <button="lightThemeBtn">Light</button>
+                <button id="lightThemeBtn">Light</button>
                 <button id="darkThemeBtn">Dark</button>
             </div>
         </div>
@@ -25,11 +26,13 @@
             <p class="description">
                 Advanced malware tools for authorized security testing only. All usage must comply with applicable laws.
             </p>
-        </sectionsection class="malware-grid">
+        </section>
+        
+        <section class="malware-grid">
             <article class="malware-card">
-                <h3>Discord Token &aler</h3>
+                <h3>Discord Token Stealer</h3>
                 <div class="malware-desc">
-                    <p>Stealthy token/cookie harvesting solution with automated ex.</p>
+                    <p>Stealthy token/cookie harvesting solution with automated exfiltration.</p>
                 </div>
                 
                 <div class="pricing">
@@ -38,10 +41,10 @@
                         <span>$20</span>
                     </div>
                     <div class="price-option" data-plan="month">
-                        <span>1span>
+                        <span>1 Month</span>
                         <span>$110</span>
                     </div>
-                    <div class-option" data-plan="lifetime">
+                    <div class="price-option" data-plan="lifetime">
                         <span>Lifetime</span>
                         <span>$250</span>
                     </div>
@@ -52,7 +55,6 @@
         </section>
     </main>
     
-    <!-- Purchase Modal -->
     <div class="modal" id="purchaseModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -60,11 +62,11 @@
                 <button class="close-btn" id="closeModalBtn">&times;</button>
             </div>
             <form id="purchaseForm">
-                <="hidden" id="selectedProduct" value="">
-                <input type="hidden" idPlan" value="">
+                <input type="hidden" id="selectedProduct" value="">
+                <input type="hidden" id="selectedPlan" value="">
                 
-                <div class="plan-select                    <!-- Dynamically populated by JavaScript -->
-                </div>
+                <div class="plan-select">
+                    </div>
                 
                 <div class="form-group">
                     <label for="cardNumber">Card Number</label>
