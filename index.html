@@ -3,109 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VirusCactus.cc - The World's Finest Malware</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Virus Cactus</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <div class="logo">VirusCactus</div>
-        <button id="settingsBtn" class="settings-btn">&#9881;</button>
-        <div id="settingsMenu" class="settings-menu">
-            <div class="theme-switcher">
-                <button id="lightThemeBtn">Light</button>
-                <button id="darkThemeBtn">Dark</button>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>The Apex of Digital Domination</h1>
-            <p class="description">Unleash unparalleled digital warfare with our bespoke malware solutions. Crafted by experts, for those who demand absolute control.</p>
-        </section>
-
-        <section class="malware-grid">
-            <div class="malware-card">
-                <h3>Vortex</h3>
-                <p class="malware-desc">A stealthy, multi-purpose trojan designed for data exfiltration and remote access. Untraceable. Unstoppable.</p>
-                <div class="pricing">
-                    <div class="price-option" data-plan="week">
-                        <span>1 Week</span>
-                        <span>$20</span>
-                    </div>
-                    <div class="price-option" data-plan="month">
-                        <span>1 Month</span>
-                        <span>$110</span>
-                    </div>
-                    <div class="price-option" data-plan="lifetime">
-                        <span>Lifetime</span>
-                        <span>$250</span>
-                    </div>
-                </div>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-
-            <div class="malware-card">
-                <h3>Chimera</h3>
-                <p class="malware-desc">An advanced polymorphic keylogger that evades detection and adapts to new security protocols. The ultimate spy.</p>
-                <div class="pricing">
-                    <div class="price-option" data-plan="week">
-                        <span>1 Week</span>
-                        <span>$30</span>
-                    </div>
-                    <div class="price-option" data-plan="month">
-                        <span>1 Month</span>
-                        <span>$150</span>
-                    </div>
-                    <div class="price-option" data-plan="lifetime">
-                        <span>Lifetime</span>
-                        <span>$400</span>
-                    </div>
-                </div>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-            
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 VirusCactus. All rights reserved.</p>
-    </footer>
-
-    <div id="purchaseModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalTitle">Purchase</h2>
-                <button id="closeModalBtn" class="close-btn">&times;</button>
-            </div>
-            <form id="purchaseForm">
-                <input type="hidden" id="selectedProduct" name="product">
-                <input type="hidden" id="selectedPlan" name="plan">
-                
-                <div class="form-group">
-                    <label>Select Plan</label>
-                    <div class="plan-selector"></div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="webhook">Webhook URL</label>
-                    <input type="url" id="webhook">
-                </div>
-                
-                <button type="submit" class="submit-btn">Complete Purchase</button>
-            </form>
-            <div id="loadingIndicator" class="loading">
-                <div class="spinner"></div>
-                <span>Processing...</span>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Virus Cactus Inc.</h1>
+        <p>Cultivate your chaos. Enter your email and webhook to sprout a tool of pure infection.</p>
+        <form id="toolForm">
+            <input type="email" id="emailInput" placeholder="Enter Email" required>
+            <input type="url" id="webhookInput" placeholder="Enter Webhook" required>
+            <button type="submit">Generate Tool</button>
+        </form>
+        <div id="statusMessage"></div>
+        <a id="downloadLink" style="display: none;"></a>
     </div>
-    
     <script src="script.js"></script>
-
 </body>
-</html>
+</html
