@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virus Cactus - MaaS (Malware as a Service)</title>
+    <title>VirusCactus.cc - The World's Finest Malware</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-mode">
+<body>
+
     <header>
-        <div class="logo">Virus Cactus MaaS</div>
-        <button class="settings-btn" id="settingsBtn">⚙️ Settings</button>
-        
-        <div class="settings-menu" id="settingsMenu">
+        <div class="logo">VirusCactus</div>
+        <button id="settingsBtn" class="settings-btn">&#9881;</button>
+        <div id="settingsMenu" class="settings-menu">
             <div class="theme-switcher">
-                <span>Theme:</span>
                 <button id="lightThemeBtn">Light</button>
                 <button id="darkThemeBtn">Dark</button>
             </div>
         </div>
     </header>
-    
+
     <main>
         <section class="hero">
-            <h1>Premium Malware Solutions</h1>
-            <p class="description">
-                Advanced malware tools for authorized security testing only. All usage must comply with applicable laws.
-            </p>
+            <h1>The Apex of Digital Domination</h1>
+            <p class="description">Unleash unparalleled digital warfare with our bespoke malware solutions. Crafted by experts, for those who demand absolute control.</p>
         </section>
-        
+
         <section class="malware-grid">
-            <article class="malware-card">
-                <h3>Discord Token Stealer</h3>
-                <div class="malware-desc">
-                    <p>Stealthy token/cookie harvesting solution with automated exfiltration.</p>
-                </div>
-                
+            <div class="malware-card">
+                <h3>Vortex</h3>
+                <p class="malware-desc">A stealthy, multi-purpose trojan designed for data exfiltration and remote access. Untraceable. Unstoppable.</p>
                 <div class="pricing">
                     <div class="price-option" data-plan="week">
                         <span>1 Week</span>
@@ -49,69 +43,69 @@
                         <span>$250</span>
                     </div>
                 </div>
-                
-                <button class="buy-btn">Purchase</button>
-            </article>
+                <button class="buy-btn">BUY NOW</button>
+            </div>
+
+            <div class="malware-card">
+                <h3>Chimera</h3>
+                <p class="malware-desc">An advanced polymorphic keylogger that evades detection and adapts to new security protocols. The ultimate spy.</p>
+                <div class="pricing">
+                    <div class="price-option" data-plan="week">
+                        <span>1 Week</span>
+                        <span>$30</span>
+                    </div>
+                    <div class="price-option" data-plan="month">
+                        <span>1 Month</span>
+                        <span>$150</span>
+                    </div>
+                    <div class="price-option" data-plan="lifetime">
+                        <span>Lifetime</span>
+                        <span>$400</span>
+                    </div>
+                </div>
+                <button class="buy-btn">BUY NOW</button>
+            </div>
+            
         </section>
     </main>
-    
-    <div class="modal" id="purchaseModal">
+
+    <footer>
+        <p>&copy; 2025 VirusCactus. All rights reserved.</p>
+    </footer>
+
+    <div id="purchaseModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 id="modalTitle">Purchase</h2>
-                <button class="close-btn" id="closeModalBtn">&times;</button>
+                <button id="closeModalBtn" class="close-btn">&times;</button>
             </div>
             <form id="purchaseForm">
-                <input type="hidden" id="selectedProduct" value="">
-                <input type="hidden" id="selectedPlan" value="">
-                
-                <div class="plan-select">
-                    </div>
+                <input type="hidden" id="selectedProduct" name="product">
+                <input type="hidden" id="selectedPlan" name="plan">
                 
                 <div class="form-group">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" id="cardNumber" placeholder="4111 1111 1111 1111" required>
+                    <label>Select Plan</label>
+                    <div class="plan-selector"></div>
                 </div>
-                
                 <div class="form-group">
-                    <label for="expiryDate">Expiry Date</label>
-                    <input type="text" id="expiryDate" placeholder="MM/YY" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" placeholder="123" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="nameOnCard">Name on Card</label>
-                    <input type="text" id="nameOnCard" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" required>
                 </div>
-                
                 <div class="form-group">
-                    <label for="webhook">Discord Webhook URL</label>
-                    <input type="url" id="webhook" placeholder="https://discord.com/api/webhooks/..." required>
+                    <label for="webhook">Webhook URL</label>
+                    <input type="url" id="webhook">
                 </div>
                 
                 <button type="submit" class="submit-btn">Complete Purchase</button>
-                
-                <div class="loading" id="loadingIndicator">
-                    <div class="spinner"></div>
-                    <p>Processing your purchase...</p>
-                </div>
             </form>
+            <div id="loadingIndicator" class="loading">
+                <div class="spinner"></div>
+                <span>Processing...</span>
+            </div>
         </div>
     </div>
     
-    <footer>
-        <p>© 2023 Virus Cactus MaaS. All tools are for authorized security research only.</p>
-    </footer>
-
     <script src="script.js"></script>
+
 </body>
 </html>
